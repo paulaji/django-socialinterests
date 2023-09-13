@@ -6,7 +6,9 @@ from django.contrib import messages
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    # Retrieve all new lead records
+    newleads = NewLead.objects.all()
+    return render(request, 'home.html', {'newleads': newleads})
 
 # to add new leads  
 def add_newlead(request):
