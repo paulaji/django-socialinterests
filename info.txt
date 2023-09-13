@@ -1,0 +1,10 @@
+pip install django // install django
+django-admin startproject socialinterest // start project with the corresponding name
+python manage.py startapp website // start django app named website inside project
+
+python manage.py runserver // boot up server
+
+python manage.py migrate // before super user creation
+
+python manage.py createsuperuser // to create superuser
+superuser || username: user || password: resu321321
